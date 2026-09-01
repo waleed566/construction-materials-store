@@ -1,0 +1,22 @@
+# PHP
+vendor/
+.env
+.env.local
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+config/database.php
+node_modules/
+dist/
+build/
