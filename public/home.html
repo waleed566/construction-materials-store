@@ -1,0 +1,64 @@
+<?php
+/**
+ * Home Page
+ */
+?>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر المواد الإنشائية - Construction Materials Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">متجر المواد الإنشائية</div>
+                <ul class="nav-links">
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#">المنتجات</a></li>
+                    <li><a href="#">عن المتجر</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
+                    <li><a href="#" id="cart-link">السلة (0)</a></li>
+                    <li><a href="#" id="auth-link">تسجيل دخول</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>أفضل متجر للمواد الإنشائية</h1>
+            <p>اختر من مئات المنتجات الإنشائية الأصلية والموثوقة</p>
+            <button class="btn-primary" id="browse-products">تصفح المنتجات</button>
+        </section>
+
+        <section id="products-section" class="products-section" style="display: none;">
+            <h2>المنتجات</h2>
+            <div id="products-container" class="products-grid">
+                <!-- Products will be loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 متجر المواد الإنشائية. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div id="auth-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="auth-form-container">
+                <!-- Auth forms will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
